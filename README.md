@@ -1,7 +1,11 @@
-# My Harvard CS50x Coursework
+# My coursework for Harvard's CS50x with Web Dev track (2020)
 ---
-[Course Link](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x)
+[Course Syllabus & Assignment Specifications](https://cs50.harvard.edu/x/2020/)
+
+My code is written in C.
+
 ---
-My notes and code written in C.
+I took this course to prepare for my degree in Statistics & Computer Science at UIUC.
+
 
 The final project is in a linked [repository](https://github.com/teetajp/gym-planner) made using Python and Flask.
