@@ -1,4 +1,4 @@
-# My coursework for Harvard's CS50x w/ Web Dev track (2020)
+# My coursework for Harvard's CS50x w/ Web track (2020)
 ---
 [Course Syllabus & Assignment Specifications](https://cs50.harvard.edu/x/2020/)
 
