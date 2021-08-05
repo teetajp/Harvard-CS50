@@ -1,0 +1,13 @@
+h1, h2, h3, p, form {
+    text-align: left;
+    margin-left: 15px;
+}
+
+h1 {
+    margin-top: 15px;
+}
+
+.hobbyimage {
+    width: 90%;
+    height: auto;
+}

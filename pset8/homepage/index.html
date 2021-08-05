@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Teetaj Pavaritpong</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hobbies.html">Hobbies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="highschool.html">High School</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="college.html">College</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h1>Welcome to TJ's Homepage</h1>
+        <h3>Here are some things to check out:</h3>
+        <ul>
+            <li> <a href="hobbies.html">My Hobbies</a> </li>
+            <li> <a href="highschool.html">My High School Journey</a> </li>
+            <li> <a href="college.html">My College Decisions</a> </li>
+        </ul>
+        <form onsubmit="greet(); return false;">
+          <label for="name">TJ wants to know your name:</label><br>
+          <input type="text" id="name" name="name">
+          <input type="submit">
+        </form>
+        <br>
+        <div style="margin-left: 15px;">List of TJ's favorite people
+          <ol id='namelist'>
+            <li id='initial'>Nobody here yet...</li>
+          </ol>
+        </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script>
+        let names = 0;
+        function greet()
+        {
+          let name = document.querySelector('#name').value;
+          if (name === '')
+          {
+            alert('You did not type your name into the box.');
+            return false;
+          }
+          else
+          {
+            if (names === 0)
+            {
+              document.querySelector('#initial').innerHTML = name;
+              names++;
+            }
+            else
+            {
+              let ol = document.getElementById('namelist');
+              let li = document.createElement("li");
+              li.appendChild(document.createTextNode(name));
+              ol.appendChild(li);
+            }
+            alert('TJ has added you to his list of favorite people! Check out the list below the submission form.');
+          }
+        }
+      </script>
+    </body>
+</html>

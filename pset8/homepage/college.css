@@ -1,0 +1,81 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #13294b;
+    color: white;
+}
+table {
+    border-collapse: separate;
+    margin: auto;
+}
+
+#collegeheader {
+    text-align: center;
+}
+
+.uniname {
+    font-weight: bold;
+    color: white;
+}
+.committed {
+    background-color: #bfd46d;
+}
+
+.accepted {
+    background-color: LightGreen;
+}
+
+.denied {
+    background-color: LightCoral;
+}
+
+.reach {
+    background-color: red;
+}
+
+.match {
+    background-color: orange;
+}
+
+.safety {
+    background-color: yellow;
+}
+
+#uiuc {
+    background-color: #E84A27;
+}
+
+#gatech {
+    background-color: #B3A369;
+}
+
+#utaustin {
+    background-color: #bf5700;
+}
+
+#uwseattle {
+    background-color: #4b2e83;
+}
+
+#uwmadison {
+    background-color: #c5050c;
+}
+
+#purdue {
+    background-color: #CEB888;
+}
+
+#umntc {
+    background-color: #7a0019;
+    color: #ffcc33;
+}
+
+#umass {
+    background-color: #881c1c;
+}

@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+<!--Insert Bootstrap code to display current quote of a stock-->
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">
+            A share of {{ company }} ({{ symbol }}) costs ${{ price }}.
+        </h5>
+      </div>
+    </div>
+{% endblock %}

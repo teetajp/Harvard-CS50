@@ -1,0 +1,3 @@
+[submodule "gym-planner"]
+	path = gym-planner
+	url = https://github.com/teetajp/gym-planner
