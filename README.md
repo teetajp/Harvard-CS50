@@ -1,4 +1,4 @@
-# Harvard CS50x Coursework
+# My Harvard CS50x Coursework
 ---
 [Course Link](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x)
 ---
